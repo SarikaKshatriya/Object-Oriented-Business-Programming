@@ -1,0 +1,28 @@
+
+<!-- saved from url=(0120)https://elearn.uta.edu/bbcswebdav/pid-7205391-dt-content-rid-16827114_1/users/rsikora/INSY%203300%20my_files/HW/hw6.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>HW #5</title>
+</head>
+
+
+<body>
+<h4 style="text-align: center;">INSY 4305/5309 Assignment #6</h4>
+<h2></h2>
+<p>1. Write a class called <tt>House</tt> to hold details of the location (street number, street name, town) and the year of construction and the property tax. Write the appropriate contructor, selector and mutator methods. Also write a <tt>toString</tt> method to return the details of the house.</p>
+<p>2. Write a subclass <tt>Home</tt> with additional instance fields for the name of the occupying family and the date they moved in. You should use the <tt>OurDate</tt> class we wrote in the class. <br><br> Note the following:<br> There should be two overloaded constructor methods: <br><br></p>
+<pre>public Home (int house, String street, String town, String family,
+	  	  OurDate movedIn)</pre>
+<p>and <br><br></p>
+<pre>public Home (int house, String street, String town, int yearConstructed, int propertyTax, String family, OurDate movedIn)</pre>
+<p><br> These should make use of the <tt>super</tt> keyword where appropriate. <br> There should be the usual methods to set and extract the values of the new instance fields:</p>
+<pre>	setFamily
+	getFamily
+	setDateMovedIn
+	getDateMovedIn</pre>
+<p>There should be a <tt>toString</tt> method that calls the <tt>toString </tt> method provided by the <tt>House</tt> class to return the details of the house and then return the text <tt>"has been occupied by FAMILY since DATE"</tt>, with suitable values inserted.</p>
+<p>You should make the three classes (<tt>House, Home, OurDate</tt>) part of the package <tt>insy.java.hw6</tt>.</p>
+<p>3. Write a simple driver application that prompts the user to enter the appropriate information about a home, creates an instance of the Home class, and then prints out the details of that home. Make sure to use the appropriate <tt>import</tt> statement(s) to import the above classes.</p>
+<h2>Deliverables:</h2>
+<p>You should submit the four source code files (<tt>House.java, Home.java, OurDate.java, HomeDriver.java</tt>).</p>
+<hr>
+</body></html>
